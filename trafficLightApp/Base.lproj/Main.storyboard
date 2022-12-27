@@ -40,7 +40,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t9e-vW-nws" userLabel="YellowView">
-                                <rect key="frame" x="110" y="199" width="100" height="100"/>
+                                <rect key="frame" x="110" y="183" width="100" height="100"/>
                                 <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="44A-UV-qRZ"/>
@@ -48,7 +48,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0sw-9v-wIu" userLabel="GreenView">
-                                <rect key="frame" x="110" y="365" width="100" height="100"/>
+                                <rect key="frame" x="110" y="333" width="100" height="100"/>
                                 <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="8Lm-kk-Jg7"/>
@@ -63,8 +63,8 @@
                             <constraint firstItem="t9e-vW-nws" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ld2-1j-cKV"/>
                             <constraint firstItem="sbN-Ap-AZv" firstAttribute="top" relation="greaterThanOrEqual" secondItem="0sw-9v-wIu" secondAttribute="bottom" constant="20" id="Lzd-dR-T7p"/>
                             <constraint firstItem="Eiy-Ub-fMh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="33" id="My0-bw-PYR"/>
-                            <constraint firstItem="0sw-9v-wIu" firstAttribute="top" secondItem="t9e-vW-nws" secondAttribute="bottom" constant="66" id="OtL-ss-egJ"/>
-                            <constraint firstItem="t9e-vW-nws" firstAttribute="top" secondItem="Eiy-Ub-fMh" secondAttribute="bottom" constant="66" id="YyB-tE-I6A"/>
+                            <constraint firstItem="0sw-9v-wIu" firstAttribute="top" secondItem="t9e-vW-nws" secondAttribute="bottom" constant="50" id="OtL-ss-egJ"/>
+                            <constraint firstItem="t9e-vW-nws" firstAttribute="top" secondItem="Eiy-Ub-fMh" secondAttribute="bottom" constant="50" id="YyB-tE-I6A"/>
                             <constraint firstItem="sbN-Ap-AZv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eju-0m-Hwy"/>
                             <constraint firstItem="Eiy-Ub-fMh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qG6-Oo-kEd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sbN-Ap-AZv" secondAttribute="bottom" constant="20" id="s5y-X1-CgK"/>
