@@ -12,7 +12,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var redLight: UIView!
     @IBOutlet weak var yellowLight: UIView!
     @IBOutlet weak var greenLight: UIView!
-    
     @IBOutlet weak var button: UIButton!
     
     enum TrafficState {
@@ -31,18 +30,12 @@ class ViewController: UIViewController {
         prepareView(view: yellowLight)
         prepareView(view: greenLight)
         
-        button.configuration = setupButton()
+        button.layer.cornerRadius = 10
     }
     
     private func prepareView(view: UIView) {
         view.layer.cornerRadius = view.frame.height / 2.0
         toggleLigth(view: view)
-    }
-    
-    private func setupButton() -> UIButton.Configuration {
-        var buttonConfig = UIButton.Configuration.filled()
-        buttonConfig.title = "START"
-        return buttonConfig
     }
     
     private func toggleLigth(view: UIView) {

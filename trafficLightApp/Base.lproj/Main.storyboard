@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait" appearance="dark"/>
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -19,14 +19,14 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sbN-Ap-AZv">
                                 <rect key="frame" x="89.5" y="500.5" width="141" height="47.5"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="47.5" id="c3I-rS-e8a"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="141" id="cGQ-na-2fp"/>
                                 </constraints>
-                                <buttonConfiguration key="configuration" style="filled" title="START" cornerStyle="large">
-                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="28"/>
-                                    <color key="baseBackgroundColor" systemColor="tintColor"/>
-                                </buttonConfiguration>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="START"/>
                                 <connections>
                                     <action selector="actionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oJl-Ez-t0p"/>
                                 </connections>
@@ -57,7 +57,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="0sw-9v-wIu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Cqv-Hn-1UV"/>
                             <constraint firstItem="t9e-vW-nws" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ld2-1j-cKV"/>
@@ -84,14 +84,11 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="tintColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
