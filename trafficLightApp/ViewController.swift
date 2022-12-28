@@ -8,34 +8,34 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
-    @IBOutlet weak var redLight: UIView!
-    @IBOutlet weak var yellowLight: UIView!
-    @IBOutlet weak var greenLight: UIView!
-    @IBOutlet weak var button: UIButton!
-    
     enum TrafficState {
         case red
         case yellow
         case green
         case off
     }
-    
     var trafficLightState = TrafficState.off
+    
+    @IBOutlet weak var redLight: UIView!
+    @IBOutlet weak var yellowLight: UIView!
+    @IBOutlet weak var greenLight: UIView!
+    @IBOutlet weak var button: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        prepareView(view: redLight)
-        prepareView(view: yellowLight)
-        prepareView(view: greenLight)
-        
         button.layer.cornerRadius = 10
+        
+        toggleLigth(view: redLight)
+        toggleLigth(view: yellowLight)
+        toggleLigth(view: greenLight)
     }
     
-    private func prepareView(view: UIView) {
-        view.layer.cornerRadius = view.frame.height / 2.0
-        toggleLigth(view: view)
+    override func viewWillLayoutSubviews() {
+        // in this func we know real size of frames
+        redLight.layer.cornerRadius = redLight.frame.height / 2
+        yellowLight.layer.cornerRadius = yellowLight.frame.height / 2
+        greenLight.layer.cornerRadius = greenLight.frame.height / 2
     }
     
     private func toggleLigth(view: UIView) {
@@ -46,7 +46,7 @@ class ViewController: UIViewController {
         }
     }
 
-    @IBAction func actionButton(_ sender: Any) {
+    @IBAction func actionButton() {
         switch trafficLightState {
         case .red:
             toggleLigth(view: redLight)
